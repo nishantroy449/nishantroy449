@@ -85,7 +85,7 @@
 ### 🐍 Snake Around My GitHub!
 
 <p align="center">
-  <img src="https://github.com/nishantroy449/nishantroy449/blob/output/github-contribution-grid-snake.svg" alt="snake animation" />
+  <img src="https://raw.githubusercontent.com/nishantroy449/nishantroy449/output/snake.svg" alt="Snake animation" />
 </p>
 
 
@@ -94,11 +94,14 @@
 ### 🐾 Fun Corner
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/cat.gif" width="80" />
-  <img src="https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/dog.gif" width="90" />
-  <img src="https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/pusheen.gif" width="80" />
+  <img width="800" src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F75C7E&center=true&width=435&lines=🐕+Dogs+vs+Cats+⚽;⚽+Championship+Match!;🥅+Goal!+Goal!+Goal!+🥅" alt="Typing SVG" />
 </p>
+<div align="center">
 
+  </div>
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&width=435&lines=Current+Match%3A+Overtime!;Dogs+Leading+3-2;Next+Goal+Wins!" alt="Match Status" />
+</p>
 ---
 
 > “Coding is meditation. Chess is strategy. Learning is infinite.”  

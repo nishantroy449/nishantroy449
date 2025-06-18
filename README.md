@@ -56,7 +56,14 @@
   ↪️ Problem-solving, scripting, automation
 
 ---
+### 🎯 Currently Learning
 
+![Python](https://img.shields.io/badge/-Python-black?style=flat-square&logo=python)
+![React](https://img.shields.io/badge/-React-black?style=flat-square&logo=react)
+![ML](https://img.shields.io/badge/-Machine%20Learning-black?style=flat-square&logo=scikit-learn)
+![CyberSec](https://img.shields.io/badge/-Cybersecurity-black?style=flat-square&logo=kali-linux)
+
+---
 ### 📌 Connect with Me
 
 <p align="center">

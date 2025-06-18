@@ -1,0 +1,123 @@
+name: Generate Pets Animation
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"  # Every 6 hours
+  workflow_dispatch:
+  push:
+    branches:
+    - main
+    - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Create pets animation script
+        run: |
+          mkdir -p scripts
+          cat > scripts/generate-pets.js << 'EOF'
+          const fs = require('fs');
+          
+          // SVG dimensions
+          const width = 800;
+          const height = 400;
+          
+          // Pet emojis and positions
+          const dogs = ['🐕', '🐶', '🐕‍🦺'];
+          const cats = ['🐱', '🐈', '🐈‍⬛'];
+          const footballs = ['⚽', '🏈'];
+          
+          // Generate random positions for pets and balls
+          function generateFrame(frameNum) {
+            let elements = [];
+            
+            // Add dogs
+            for (let i = 0; i < 4; i++) {
+              const x = (frameNum * 20 + i * 150) % (width - 50);
+              const y = 50 + (i * 80) + Math.sin(frameNum * 0.1 + i) * 20;
+              const dog = dogs[i % dogs.length];
+              elements.push(`<text x="${x}" y="${y}" font-size="24" fill="none">${dog}💨</text>`);
+            }
+            
+            // Add cats
+            for (let i = 0; i < 3; i++) {
+              const x = (width - (frameNum * 15 + i * 180)) % (width - 50);
+              const y = 120 + (i * 90) + Math.cos(frameNum * 0.12 + i) * 15;
+              const cat = cats[i % cats.length];
+              elements.push(`<text x="${x}" y="${y}" font-size="24" fill="none">${cat}💨</text>`);
+            }
+            
+            // Add footballs
+            for (let i = 0; i < 6; i++) {
+              const x = (frameNum * 5 + i * 120 + 60) % (width - 30);
+              const y = 80 + (i * 50) + Math.sin(frameNum * 0.08 + i * 2) * 10;
+              const ball = footballs[i % footballs.length];
+              elements.push(`<text x="${x}" y="${y}" font-size="20" fill="none">${ball}</text>`);
+            }
+            
+            return elements.join('\n    ');
+          }
+          
+          // Generate SVG with animation
+          const svgContent = `<?xml version="1.0" encoding="UTF-8"?>
+          <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <style>
+                .bg { fill: #0d1117; }
+                .title { fill: #58a6ff; font-family: 'Segoe UI', sans-serif; font-weight: bold; }
+              </style>
+            </defs>
+            
+            <rect class="bg" width="100%" height="100%"/>
+            
+            <text x="400" y="30" text-anchor="middle" class="title" font-size="20">🎮 Pets Playing Football! ⚽</text>
+            
+            ${Array.from({length: 60}, (_, i) => {
+              const delay = i * 0.5;
+              return `
+            <g>
+              <animateTransform
+                attributeName="transform"
+                type="translate"
+                values="0,0"
+                dur="30s"
+                begin="${delay}s"
+                repeatCount="indefinite"/>
+              ${generateFrame(i)}
+            </g>`;
+            }).join('')}
+            
+            <text x="400" y="390" text-anchor="middle" class="title" font-size="14">Dogs and Cats having fun! 🐕🐱</text>
+          </svg>`;
+          
+          // Ensure dist directory exists
+          if (!fs.existsSync('dist')) {
+            fs.mkdirSync('dist');
+          }
+          
+          // Write SVG file
+          fs.writeFileSync('dist/pets-animation.svg', svgContent);
+          console.log('✅ Pets animation generated successfully!');
+          EOF
+      
+      - name: Generate pets animation
+        run: node scripts/generate-pets.js
+      
+      - name: Commit and push animation
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: Update pets animation
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

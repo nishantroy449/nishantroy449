@@ -98,13 +98,23 @@
 ### 🐾 Fun Corner
 
 <p align="center">
-  <img width="800" src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F75C7E&center=true&width=435&lines=🐕+Dogs+vs+Cats+⚽;⚽+Championship+Match!;🥅+Goal!+Goal!+Goal!+🥅" alt="Typing SVG" />
+  <img width="600" src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F75C7E&center=true&width=435&lines=🐕+Woof!+Let's+Play!+⚽;🐱+Meow!+My+Turn!+⚽;Just+Having+Fun!+🎾" alt="Typing SVG" />
 </p>
 <div align="center">
+    🐕💨      ⚽           🐱💨         ⚽      🐶💨
+                    
+⚽        🐈‍⬛💨           🐕‍🦺💨      ⚽        🐱‍👤💨    ⚽
 
-  </div>
+         ⚽     🐶💨              🐈💨       ⚽
+    
+🐕💨            ⚽      🐱💨        🐶‍🦺💨         ⚽
+
+    ⚽    🐈‍⬛💨      ⚽         🐕‍🦺💨    ⚽     🐱💨
+
+              🐶💨    ⚽              🐈💨    ⚽
+</div>
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&width=435&lines=Current+Match%3A+Overtime!;Dogs+Leading+3-2;Next+Goal+Wins!" alt="Match Status" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1500&color=36BCF7&center=true&width=500&lines=🐕+Fetch+the+ball!+⚽;🐱+Pounce+and+play!+🎾;Everyone's+having+fun!+🎉" alt="Play Status" />
 </p>
 ---
 

@@ -97,24 +97,10 @@
 
 ### 🐾 Fun Corner
 
+### 🎮 Fun Zone - Pets Playing with Football! ⚽
+
 <p align="center">
-  <img width="600" src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F75C7E&center=true&width=435&lines=🐕+Woof!+Let's+Play!+⚽;🐱+Meow!+My+Turn!+⚽;Just+Having+Fun!+🎾" alt="Typing SVG" />
-</p>
-<div align="center">
-    🐕💨      ⚽           🐱💨         ⚽      🐶💨
-                    
-⚽        🐈‍⬛💨           🐕‍🦺💨      ⚽        🐱‍👤💨    ⚽
-
-         ⚽     🐶💨              🐈💨       ⚽
-    
-🐕💨            ⚽      🐱💨        🐶‍🦺💨         ⚽
-
-    ⚽    🐈‍⬛💨      ⚽         🐕‍🦺💨    ⚽     🐱💨
-
-              🐶💨    ⚽              🐈💨    ⚽
-</div>
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1500&color=36BCF7&center=true&width=500&lines=🐕+Fetch+the+ball!+⚽;🐱+Pounce+and+play!+🎾;Everyone's+having+fun!+🎉" alt="Play Status" />
+  <img src="https://raw.githubusercontent.com/nishantroy449/nishantroy449/output/pets-animation.svg" alt="Pets playing football animation" width="800"/>
 </p>
 ---
 

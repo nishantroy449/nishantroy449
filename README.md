@@ -100,6 +100,12 @@
 </p>
 
 ---
+
+<p align="center">
+  <img src="./pets.svg" alt="pet walking animation"/>
+</p>
+
+---
  
 > “Coding is meditation. Chess is strategy. Learning is infinite.”  
 > — *Nishant Roy*

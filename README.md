@@ -38,7 +38,7 @@
 - ✅ *Outscal Generative AI Program* – Certified
 - ✅ *IIT Guwahati Summer Analytics Program* – Participant
 - ✅ *Hosted My First Hackathon on Kaggle* 🎯  
-  ↪️ [`Repo`](https://github.com/nishantroy449/SummerAnalytics-Hackathon)
+  ↪️ [`Repo`]([https://github.com/nishantroy449/SummerAnalytics-Hackathon](https://github.com/nishantroy449/summer-analytics-hackathon-2025))
 
 ---
 

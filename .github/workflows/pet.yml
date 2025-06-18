@@ -1,0 +1,24 @@
+name: "Add Pet Walking"
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # runs every hour
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: sarisia/actions/pet@v1
+        with:
+          type: 'cat'  # you can use 'dog' or 'snake' or 'cat'
+          path: 'pets.svg'
+      - name: Commit changes
+        run: |
+          git config --global user.name 'nishantroy449'
+          git config --global user.email 'roy.nishant449@gmail.com'
+          git add pets.svg
+          git commit -m "Add animated pet"
+          git push

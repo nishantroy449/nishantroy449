@@ -92,17 +92,7 @@
   </picture>
 </p>
 
-
 ---
-
-### 🐾 Fun Corner
-
-### 🎮 Fun Zone - Pets Playing with Football! ⚽
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/nishantroy449/nishantroy449/output/pets-animation.svg" alt="Pets playing football animation" width="800"/>
-</p>
----
-
+ 
 > “Coding is meditation. Chess is strategy. Learning is infinite.”  
 > — *Nishant Roy*

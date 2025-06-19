@@ -91,7 +91,8 @@
 
 ### 🐍 Snake Around My GitHub!
 
-![snake gif](https://github.com/nishantroy449/nishantroy449/blob/output/github-contribution-grid-snake.svg)
+![GitHub Snake Dark](https://github.com/nishantroy449/nishantroy449/blob/output/github-contribution-grid-snake-dark.svg)
+
 
 ---
 

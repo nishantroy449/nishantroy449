@@ -1,53 +1,25 @@
-name: Generate Snake
+name: Generate Snake Animation
 
-# Controls when the action will run
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
   schedule:
-    # every 12 hours
-    - cron: "0 */12 * * *"
+    - cron: "0 0 * * *" # runs every day at midnight UTC
+  workflow_dispatch:    # allows manual trigger
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-  # Run workflow when pushing on main/master
-  push:
-    branches:
-    - main
-    - master
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  generate:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Clone repo
-        uses: actions/checkout@v3
-    
-      - name: Generate the snake files in './dist/'
-        uses: Platane/snk@v3
-        id: snake-gif
+      - uses: Platane/snk@master
         with:
-          github_user_name: ${{ github.repository_owner }}
+          github_user_name: nishantroy449
           outputs: |
-            dist/snake.svg
-            dist/snake-dark.svg?palette=github-dark
-            dist/snake.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg
 
-      - name: Show build status
-        run: git status
-
-      - name: Push new files to the output branch
+      - name: Push to the output branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
           build_dir: dist
-          commit_message: Update snake animations
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -83,11 +83,8 @@
 
  
 
-
-
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nishantroy449&show_icons=true&theme=radical&border_radius=15" alt="GitHub Stats" />
-  <br/>
+ <img src="https://github-readme-stats.vercel.app/api?username=nishantroy449&show_icons=true&theme=radical&border_radius=15&cache_seconds=1800" alt="GitHub Stats" />  <br/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=nishantroy449&theme=radical&border_radius=15" />
 </p>
 
